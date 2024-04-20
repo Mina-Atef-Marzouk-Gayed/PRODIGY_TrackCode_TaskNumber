@@ -1,0 +1,171 @@
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body{
+font-family:"work Sans","sans-serif";
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.header{
+    padding :20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 30px;
+    display: flex;
+    padding-left: 0px;
+    margin-right: -60px;
+
+
+}
+.header .links{
+    position: relative;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+.header .links .icon span{
+background-color: black;
+margin-bottom: 4px;
+height:2px;
+
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100px;
+}
+.header .links .icon span:first-child{
+width: 100px;
+}
+.header .links .icon span:nth-child(2){
+    width:20px;
+    transition: 0.4s;
+}
+.header .links .icon span:last-child{
+    width: 100px;
+}
+.header .links ul{
+    list-style:none;
+    margin:0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    top: 30px;
+    display: none;
+}
+.header .links ul::before{
+content: "";
+border-width: 10px;
+border-style: solid;
+border-color: transparent transparent antiquewhite transparent;
+position:absolute;
+right: 5px;
+top:-20px;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul li a{
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #222;
+transition: 0.3s;
+}
+.header .links ul il a:hover{
+padding-left: 25px;
+}
+.header .links ul il a:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+
+}
+
+.landing{
+background-image:url("https://www.josephfiler.com/images/xl/Alaska-1596-Edit-Edit-BW.jpg");
+background-size:cover;
+height: calc(100vh - 64px);
+}
+.landing .intro-text{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.landing .intro-text h1{
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 50px;
+    color:var(--main-color);
+
+}
+.landing.intro-text p{
+    font-size: 19px;
+    list-style: none;
+}
+:root{
+    --main-color:#1d2944;
+}
+.features .container{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr)) ;
+    grid-gap:20px;
+}
+.features .feat{
+    padding: 20px;
+    text-align: center;
+}
+.features .feat{
+    color: var(--main-color);
+}
+.features .feat i{
+    color: var(--main-color);
+
+}
+.features .feat h3{
+    font-weight: 800;
+    margin:30px 0px;
+
+}
+.features .feat p{
+    line-height: 1.5;
+    color:midnightblue
+}
+.features{
+    background-color: rgba(115, 105, 91, 0.269);
+}
+
+
