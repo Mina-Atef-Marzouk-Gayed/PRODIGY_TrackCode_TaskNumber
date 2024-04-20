@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, rgb(208, 255, 133) , rgb(125, 218, 237));
+
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background:linear-gradient(135deg,#00feba,#5b548a);
+    color:aliceblue;
+    border-radius: 20px;
+    padding:40px;
+    margin :100px auto 0;
+    text-align: center;
+
+}
+.search{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.search input{
+border: 7px;
+outline :1.5px;
+background: #ebfffc;
+color:#555;
+padding:10px 25px;
+height: 60px;
+border-radius: 30px;
+flex:1;
+margin-right: 16px;
+font-size: 18px
+}
+.search button{
+    border: 20px;
+    outline :1.5px;
+    background: #ebfffc;
+    color:#555;
+    padding: 15px 30px;
+    height: 60px;
+    border-radius: 90px;
+    cursor: pointer;
+    width: 10px;
+    height: 50px;
+
+}
+.search button img{
+width: 20px;
+height: auto;
+margin-right: 60px;
+margin-left: -10px;
+    
+}
+.waether-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.waether h1{
+    font-size: 80px;
+    font-weight: 500;
+
+}
+.waether h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+.details{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin:50px 40px;
+}
+.col{
+    display:flex;
+    align-items: center;
+    text-align: left;
+
+}
+.col img{
+    width:60px ;
+    padding: 10px;
+    align-content: center;
+}
+
+.humidity,wind{
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bolder;
+    display: none;
+}
