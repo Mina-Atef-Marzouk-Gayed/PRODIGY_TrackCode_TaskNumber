@@ -103,6 +103,3 @@ Run the project by opening index.html in your browser.
 
 Created by Mina Atef
 Intern at Prodigy InfoTech
-
-```bash
-git clone https://github.com/your-username/PRODIGY_TrackCode_TaskNumber.git
